@@ -51,12 +51,7 @@
                 display_c: v.poster_type == 3,
               }"
             >
-              <img
-                v-for="(img, i) in v.imageSrc"
-                :key="i"
-                :src="img"
-                :v-lazy="img"
-              />
+              <img v-for="(img, i) in v.imageSrc" :key="i" :src="img" />
             </div>
           </div>
         </van-list>
